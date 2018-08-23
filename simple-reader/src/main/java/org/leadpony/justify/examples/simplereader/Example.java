@@ -22,7 +22,7 @@ public class Example {
     private static final Path SCHEMA_PATH = Paths.get("person.schema.json");
     private static final Path INSTANCE_PATH = Paths.get("person-bad.json");
 
-    public static void main(String[] args) throws IOException {
+    public void run() throws IOException {
         JsonSchema schema = Jsonv.readSchema(Files.newInputStream(SCHEMA_PATH));
         
         List<Problem> problems = new ArrayList<>();
@@ -34,5 +34,9 @@ public class Example {
         if (!problems.isEmpty()) {
             problems.forEach(System.out::println);
         }
+    }
+
+    public static void main(String[] args) throws IOException {
+        new Example().run();
     }
 }

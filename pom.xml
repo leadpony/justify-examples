@@ -65,15 +65,6 @@
                     <configuration>
                         <outputDirectory>${project.build.directory}/modules/</outputDirectory>
                     </configuration>
-                    <executions>
-                        <execution>
-                            <id>copy-dependencies</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>copy-dependencies</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>

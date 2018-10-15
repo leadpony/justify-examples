@@ -1,3 +1,3 @@
 #!/bin/bash
 
-${JAVA_HOME}/bin/java -cp "target/modules/*" org.leadpony.justify.examples.simplereader.Example
+"${JAVA_HOME}/bin/java" -cp "target/modules/*" org.leadpony.justify.examples.simplereader.Example

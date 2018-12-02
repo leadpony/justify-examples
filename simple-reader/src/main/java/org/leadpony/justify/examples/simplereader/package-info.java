@@ -1,1 +1,0 @@
-package org.leadpony.justify.examples.simplereader;

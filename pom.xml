@@ -11,8 +11,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>simple-parser</module>
-        <module>simple-reader</module>
+        <module>justify-examples-basicparser</module>
+        <module>justify-examples-basicreader</module>
     </modules>
     
     <properties>

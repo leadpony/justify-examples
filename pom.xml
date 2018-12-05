@@ -62,6 +62,25 @@
 
     <profiles>
         <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+                                <release>10</release>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+        <profile>
             <id>jdk8</id>
             <activation>
                 <jdk>1.8</jdk>
@@ -78,25 +97,6 @@
                                 <excludes>
                                     <exclude>module-info.java</exclude>
                                 </excludes>
-                            </configuration>
-                        </plugin>
-                    </plugins>
-                </pluginManagement>
-            </build>
-        </profile>
-        <profile>
-            <id>jdk10</id>
-            <activation>
-                <jdk>[10,]</jdk>
-            </activation>
-            <build>
-                <pluginManagement>
-                    <plugins>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-compiler-plugin</artifactId>
-                            <configuration>
-                                <release>10</release>
                             </configuration>
                         </plugin>
                     </plugins>

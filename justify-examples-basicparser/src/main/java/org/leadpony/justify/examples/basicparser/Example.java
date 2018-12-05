@@ -6,9 +6,9 @@ import java.nio.file.Paths;
 
 import javax.json.stream.JsonParser;
 
-import org.leadpony.justify.core.JsonSchema;
-import org.leadpony.justify.core.Jsonv;
-import org.leadpony.justify.core.ProblemHandler;
+import org.leadpony.justify.api.JsonSchema;
+import org.leadpony.justify.api.JsonValidationService;
+import org.leadpony.justify.api.ProblemHandler;
 
 /**
  * Validating a JSON document with the Streaming API.
@@ -16,7 +16,7 @@ import org.leadpony.justify.core.ProblemHandler;
 public class Example {
 
     public void run(String instancePath, String schemaPath) throws IOException {
-        Jsonv service = Jsonv.newInstance();
+        JsonValidationService service = JsonValidationService.newInstance();
         
         Path pathToSchema = Paths.get(schemaPath);
         JsonSchema schema = service.readSchema(pathToSchema);

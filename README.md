@@ -2,9 +2,9 @@
 
 This project provides various kinds of code samples demonstrating how to validate JSON documents using [Justify].
 
-## How to Build
+## How to Build Examples
 
-The commands below builds all examples in this directory.
+The commands below build all examples in this project.
 
 ```bash
 $ git clone https://github.com/leadpony/justify-examples.git

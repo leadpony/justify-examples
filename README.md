@@ -1,4 +1,5 @@
 # Justify Examples
+[![Build Status](https://travis-ci.org/leadpony/justify-examples.svg?branch=master)](https://travis-ci.org/leadpony/justify-examples) 
 
 This project provides various kinds of code samples demonstrating how to validate JSON documents using [Justify].
 

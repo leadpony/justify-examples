@@ -1,17 +1,21 @@
-package org.leadpony.justify.examples.basicparser;
+package org.leadpony.justify.examples.binding;
 
 import java.io.IOException;
-import java.nio.file.Path;
+import java.io.InputStream;
+import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import javax.json.stream.JsonParser;
+import javax.json.bind.Jsonb;
+import javax.json.bind.JsonbBuilder;
+import javax.json.spi.JsonProvider;
 
 import org.leadpony.justify.api.JsonSchema;
 import org.leadpony.justify.api.JsonValidationService;
 import org.leadpony.justify.api.ProblemHandler;
 
 /**
- * Validating a JSON document with the Streaming API.
+ * Validating a JSON document while unmarshalling the document into
+ * Plain Old Java Objects.
  */
 public class Example {
 
@@ -24,18 +28,18 @@ public class Example {
      */
     public void run(String instancePath, String schemaPath) throws IOException {
         JsonValidationService service = JsonValidationService.newInstance();
-        
+
         JsonSchema schema = service.readSchema(Paths.get(schemaPath));
 
         // Problem handler
         ProblemHandler handler = service.createProblemPrinter(System.out::println);
-
-        Path pathToInstance = Paths.get(instancePath);
-        try (JsonParser parser = service.createParser(pathToInstance, schema, handler)) {
-            while (parser.hasNext()) {
-                JsonParser.Event event = parser.next();
-                System.out.println(event);
-            }
+        
+        JsonProvider provider = service.createJsonProvider(schema, parser->handler);
+        Jsonb jsonb = JsonbBuilder.newBuilder().withProvider(provider).build();
+        
+        try (InputStream stream = Files.newInputStream(Paths.get(instancePath))) {
+            Person person = jsonb.fromJson(stream, Person.class);
+            System.out.println(person);
         }
     }
     

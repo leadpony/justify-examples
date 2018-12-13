@@ -16,11 +16,17 @@ import org.leadpony.justify.api.ProblemHandler;
  */
 public class Example {
     
+    /**
+     * Run this example.
+     * 
+     * @param instancePath the path to the JSON file to be validated.
+     * @param schemaPath the path to the JSON schema file.
+     * @throws IOException if an I/O error occurs while reading JSON files. 
+     */
     public void run(String instancePath, String schemaPath) throws IOException {
         JsonValidationService service = JsonValidationService.newInstance();
       
-        Path pathToSchema = Paths.get(schemaPath);
-        JsonSchema schema = service.readSchema(pathToSchema);
+        JsonSchema schema = service.readSchema(Paths.get(schemaPath));
 
         // Problem handler
         ProblemHandler handler = service.createProblemPrinter(System.out::println);

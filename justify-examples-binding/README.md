@@ -13,13 +13,13 @@ Follow the instructions shown in [README](../README.md) in the project root.
 Using module path in Java 9 or higher:
 
 ```bash
-$ java -p target/modules/ -m org.leadpony.justify.examples.binding/org.leadpony.justify.examples.binding.Example <path/to/instance> <path/to/schema>
+$ java -p target/modules/ -m org.leadpony.justify.examples.binding/org.leadpony.justify.examples.binding.Example <path/to/schema> <path/to/instance>
 ```
 
 Using classpath in Java 8:
 
 ```bash
-$ java -cp "target/modules/*" org.leadpony.justify.examples.binding.Example <path/to/instance> <path/to/schema>
+$ java -cp "target/modules/*" org.leadpony.justify.examples.binding.Example <path/to/schema> <path/to/instance>
 ```
 
 ## License

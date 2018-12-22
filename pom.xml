@@ -18,7 +18,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>11</java.version>
     </properties>
     
     <dependencyManagement>
@@ -116,7 +115,7 @@
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-compiler-plugin</artifactId>
                             <configuration>
-                                <release>${java.version}</release>
+                                <release>9</release>
                             </configuration>
                         </plugin>
                     </plugins>

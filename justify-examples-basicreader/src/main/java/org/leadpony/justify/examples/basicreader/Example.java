@@ -19,11 +19,11 @@ public class Example {
     /**
      * Run this example.
      * 
-     * @param instancePath the path to the JSON file to be validated.
      * @param schemaPath the path to the JSON schema file.
+     * @param instancePath the path to the JSON file to be validated.
      * @throws IOException if an I/O error occurs while reading JSON files. 
      */
-    public void run(String instancePath, String schemaPath) throws IOException {
+    public void run(String schemaPath, String instancePath) throws IOException {
         JsonValidationService service = JsonValidationService.newInstance();
       
         JsonSchema schema = service.readSchema(Paths.get(schemaPath));
@@ -41,6 +41,8 @@ public class Example {
     public static void main(String[] args) throws IOException {
         if (args.length >= 2) {
             new Example().run(args[0], args[1]);
+        } else {
+            System.err.println("Missing arguments: <JSON schema> <JSON instance>");
         }
     }
 }

@@ -1,5 +1,5 @@
 #!/bin/bash
-
-"${JAVA_HOME}/bin/java" -p target/modules/ \
+JAVA=$JAVA_HOME/bin/java
+"$JAVA" -p target/modules/ \
 -m org.leadpony.justify.examples.binding/org.leadpony.justify.examples.binding.Example \
-person-bad.json person.schema.json
+person.schema.json person-bad.json 

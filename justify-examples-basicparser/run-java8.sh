@@ -1,4 +1,4 @@
 #!/bin/bash
-
-"${JAVA_HOME}/bin/java" -cp "target/modules/*" org.leadpony.justify.examples.basicparser.Example \
-person-bad.json person.schema.json
+JAVA=$JAVA_HOME/bin/java
+"$JAVA" -cp "target/modules/*" org.leadpony.justify.examples.basicparser.Example \
+person.schema.json person-bad.json

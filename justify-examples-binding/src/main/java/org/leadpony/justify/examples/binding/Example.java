@@ -47,7 +47,7 @@ public class Example {
         if (args.length >= 2) {
             new Example().run(args[0], args[1]);
         } else {
-            System.err.println("Missing arguments: <JSON schema> <JSON instance>");
+            System.err.println("Missing arguments: <path/to/JSON schema> <path/to/JSON instance>");
         }
     }
 }

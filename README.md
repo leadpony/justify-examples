@@ -32,6 +32,11 @@ This code sample demonstrates how to validate a JSON document using the Object M
 
 This code sample demonstrates how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
 
+### 4. [Schema Builder](justify-examples-schemabuilder/)
+
+This code sample demonstrates how to build a JSON schema programmatically.
+The code validates a JSON document against the built schema.
+
 ## License
 
 All examples in this repository are free and unencumbered software released into the public domain. Please read [LICENSE] file for more information.

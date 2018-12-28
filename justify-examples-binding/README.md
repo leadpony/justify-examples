@@ -2,29 +2,29 @@
 
 ## Description
 
-This code sample demonstrates how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [JSON Binding API].
+This code sample demonstrates how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
 
 ## How to Build
 
-Follow the instructions shown in [README](../README.md) in the project root.
+Follow the instructions shown in [README](../README.md) in the repository root.
 
 ## How to Run
 
 Using module path in Java 9 or higher:
 
 ```bash
-$ java -p target/modules/ -m org.leadpony.justify.examples.binding/org.leadpony.justify.examples.binding.Example <path/to/schema> <path/to/instance>
+$ ./run.sh <path/to/JSON schema> <path/to/JSON instance>
 ```
 
 Using classpath in Java 8:
 
 ```bash
-$ java -cp "target/modules/*" org.leadpony.justify.examples.binding.Example <path/to/schema> <path/to/instance>
+$ ./run-java8.sh <path/to/JSON schema> <path/to/JSON instance>
 ```
 
 ## License
 
-Please see [LICENSE](../LICENSE) in the project root.
+Please see [LICENSE](../LICENSE) in the repository root.
 
-[JSON Processing API]: https://javaee.github.io/jsonp/
-[JSON Binding API]: http://json-b.net/
+[Java API for JSON Processing]: https://javaee.github.io/jsonp/
+[Java API for JSON Binding]: http://json-b.net/

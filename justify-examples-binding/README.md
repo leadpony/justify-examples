@@ -2,7 +2,7 @@
 
 ## Description
 
-This code sample demonstrates how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
+This code sample shows how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
 
 ## How to Build
 

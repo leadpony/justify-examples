@@ -2,7 +2,7 @@
 
 ## Description
 
-This code sample demonstrates how to validate a JSON document using the Object Model API of [Java API for JSON Processing].
+This code sample shows how to validate a JSON document using the Object Model API of [Java API for JSON Processing].
 
 ## How to Build
 

@@ -14,7 +14,7 @@ import org.leadpony.justify.api.JsonValidationService;
 import org.leadpony.justify.api.ProblemHandler;
 
 /**
- * Building a JSON schema programmatically.
+ * Builds a JSON schema programmatically.
  */
 public class Example {
 
@@ -22,7 +22,7 @@ public class Example {
     private final JsonValidationService service = JsonValidationService.newInstance(); 
     
     /**
-     * Run this example.
+     * Runs this example.
      *
      * @param instancePath the path to the JSON file to be validated.
      * @throws IOException if an I/O error occurs while reading JSON files.
@@ -41,7 +41,7 @@ public class Example {
     }
     
     /**
-     * Builds a JSON schema programmatically.
+     * Builds a JSON schema programmatically with {@link JsonSchemaBuilder}.
      * 
      * @return newly built JSON schema.
      */

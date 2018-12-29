@@ -14,13 +14,13 @@ import org.leadpony.justify.api.JsonValidationService;
 import org.leadpony.justify.api.ProblemHandler;
 
 /**
- * Validating a JSON document while unmarshalling the document into
+ * Validates a JSON document while unmarshalling the document into
  * Plain Old Java Objects.
  */
 public class Example {
 
     /**
-     * Run this example.
+     * Runs this example.
      * 
      * @param schemaPath the path to the JSON schema file.
      * @param instancePath the path to the JSON file to be validated.

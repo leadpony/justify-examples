@@ -12,12 +12,12 @@ import org.leadpony.justify.api.JsonValidationService;
 import org.leadpony.justify.api.ProblemHandler;
 
 /**
- * Validating a JSON document with the Object Model API.
+ * Validates a JSON document with the Object Model API.
  */
 public class Example {
     
     /**
-     * Run this example.
+     * Runs this example.
      * 
      * @param schemaPath the path to the JSON schema file.
      * @param instancePath the path to the JSON file to be validated.

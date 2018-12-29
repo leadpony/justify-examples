@@ -11,9 +11,9 @@
         <version>0.10.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>justify-examples-basicreader</artifactId>
+    <artifactId>justify-examples-customformat</artifactId>
     <packaging>jar</packaging>
-   
+
     <build>
         <plugins>
             <plugin>
@@ -22,5 +22,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>

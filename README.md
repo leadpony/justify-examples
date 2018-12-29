@@ -22,20 +22,25 @@ $ mvn clean package
 
 ### 1. [Basic Parser](justify-examples-basicparser/)
 
-This code sample demonstrates how to validate a JSON document using the Streaming API of [Java API for JSON Processing].
+This code sample shows how to validate a JSON document using the Streaming API of [Java API for JSON Processing].
 
 ### 2. [Basic Reader](justify-examples-basicreader/)
 
-This code sample demonstrates how to validate a JSON document using the Object Model API of [Java API for JSON Processing].
+This code sample shows how to validate a JSON document using the Object Model API of [Java API for JSON Processing].
 
 ### 3. [Binding](justify-examples-binding/)
 
-This code sample demonstrates how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
+This code sample shows how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
 
 ### 4. [Schema Builder](justify-examples-schemabuilder/)
 
-This code sample demonstrates how to build a JSON schema programmatically.
+This code sample shows how to build a JSON schema programmatically.
 The code validates a JSON document against the built schema.
+
+### 5. [Custom Format](justify-examples-customformat/)
+
+This code sample shows how to implement your own format attribute,
+which can be used as the value of "format" keyword in the schema definition.
 
 ## License
 

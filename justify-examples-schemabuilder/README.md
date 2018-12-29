@@ -2,7 +2,7 @@
 
 ## Description
 
-This code sample demonstrates how to build a JSON schema programmatically.
+This code sample shows how to build a JSON schema programmatically.
 The code validates a JSON document against the built schema.
 
 ## How to Build

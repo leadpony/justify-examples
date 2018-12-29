@@ -29,13 +29,13 @@ Follow the instructions shown in [README](../README.md) in the repository root.
 Using module path in Java 9 or higher:
 
 ```bash
-$ ./run.sh <path/to/JSON schema> <path/to/JSON instance>
+$ ./run.sh words.schema.json words.json
 ```
 
 Using classpath in Java 8:
 
 ```bash
-$ ./run-java8.sh <path/to/JSON schema> <path/to/JSON instance>
+$ ./run-java8.sh words.schema.json words.json
 ```
 
 ## License

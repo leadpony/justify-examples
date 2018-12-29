@@ -1,0 +1,18 @@
+{
+    "$id": "https://example.com/ballpark.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ballpark",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "team": {
+            "type": "string"
+        },
+        "coordinates": {
+            "$ref": "https://example.com/geographical-location.schema.json"
+        }
+    },
+    "required": ["name", "team"]
+}

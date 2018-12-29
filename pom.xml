@@ -15,13 +15,14 @@
         <module>justify-examples-basicreader</module>
         <module>justify-examples-binding</module>
         <module>justify-examples-schemabuilder</module>
+        <module>justify-examples-schemaresolver</module>
         <module>justify-examples-customformat</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <dependencyManagement>
         <dependencies>
             <dependency>

@@ -37,7 +37,12 @@ This code sample shows how to validate a JSON document while unmarshalling the J
 This code sample shows how to build a JSON schema programmatically.
 The code validates a JSON document against the built schema.
 
-### 5. [Custom Format](justify-examples-customformat/)
+### 5. [Schema Resolver](justify-examples-schemaresolver/)
+
+This code sample shows how to resolve a referenced external JSON schema using
+the implementation class of JsonSchemaResolver.
+
+### 6. [Custom Format](justify-examples-customformat/)
 
 This code sample shows how to implement your own format attribute,
 which can be used as the value of "format" keyword in the schema definition.

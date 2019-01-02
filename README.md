@@ -15,8 +15,10 @@ The commands below build all examples in this repository.
 ```bash
 $ git clone https://github.com/leadpony/justify-examples.git
 $ cd justify-examples
-$ mvn clean package
+$ mvn package
 ```
+
+The ZIP file containing all source code is also available from [Download].
 
 ## Examples
 
@@ -57,3 +59,4 @@ All examples in this repository are free and unencumbered software released into
 [Java API for JSON Binding]: http://json-b.net/
 [LICENSE]: LICENSE
 [Apache Maven]: https://maven.apache.org/
+[Download]: https://github.com/leadpony/justify-examples/archive/master.zip

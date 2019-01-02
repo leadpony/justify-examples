@@ -19,8 +19,8 @@ import org.leadpony.justify.api.ProblemHandler;
 public class Example {
 
     // The only instance of JSON validation service.
-    private final JsonValidationService service = JsonValidationService.newInstance(); 
-    
+    private final JsonValidationService service = JsonValidationService.newInstance();
+
     /**
      * Runs this example.
      *
@@ -39,35 +39,35 @@ public class Example {
             System.out.println(value);
         }
     }
-    
+
     /**
      * Builds a JSON schema programmatically with {@link JsonSchemaBuilder}.
-     * 
+     *
      * @return newly built JSON schema.
      */
     private JsonSchema buildSchema() {
         JsonSchemaBuilderFactory f = service.createSchemaBuilderFactory();
-        
+
         JsonSchema schema = f.createBuilder()
                 .withType(InstanceType.OBJECT)
-                .withProperty("firstName", 
+                .withProperty("firstName",
                         f.createBuilder().withType(InstanceType.STRING).build())
-                .withProperty("lastName", 
+                .withProperty("lastName",
                         f.createBuilder().withType(InstanceType.STRING).build())
-                .withProperty("age", 
+                .withProperty("age",
                         f.createBuilder()
                             .withType(InstanceType.INTEGER)
                             .withMinimum(0)
                             .build())
-                .withProperty("hobbies", 
+                .withProperty("hobbies",
                         f.createBuilder()
                             .withType(InstanceType.ARRAY)
-                            .withItem(
+                            .withItems(
                                     f.createBuilder().withType(InstanceType.STRING).build())
                             .build())
                 .withRequired("firstName", "lastName")
                 .build();
-        
+
         return schema;
     }
 

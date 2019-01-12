@@ -34,24 +34,29 @@ This code sample shows how to validate a JSON document using the Object Model AP
 
 This code sample shows how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
 
-### 4. [Schema Builder](justify-examples-schemabuilder/)
+### 4. [Problem Handler](justify-examples-problemhandler/)
+
+This code sample shows how to implement your own problem handler,
+which processes the problems found in the validation.
+
+### 5. [Schema Builder](justify-examples-schemabuilder/)
 
 This code sample shows how to build a JSON schema programmatically.
 The code validates a JSON document against the built schema.
 
-### 5. [Schema Resolver](justify-examples-schemaresolver/)
+### 6. [Schema Resolver](justify-examples-schemaresolver/)
 
 This code sample shows how to resolve a referenced external JSON schema using
 the implementation class of JsonSchemaResolver.
 
-### 6. [Custom Format](justify-examples-customformat/)
+### 7. [Custom Format](justify-examples-customformat/)
 
 This code sample shows how to implement your own format attribute,
 which can be used as the value of "format" keyword in the schema definition.
 
 ## License
 
-All examples in this repository are free and unencumbered software released into the public domain. Please read [LICENSE] file for more information.
+All coe samples in this repository are free and unencumbered software released into the public domain. Please read [LICENSE] file for more information.
 
 [JSON Schema Specification]: https://json-schema.org/
 [Justify]: https://github.com/leadpony/justify

@@ -14,6 +14,7 @@
         <module>justify-examples-basicparser</module>
         <module>justify-examples-basicreader</module>
         <module>justify-examples-binding</module>
+        <module>justify-examples-problemhandler</module>
         <module>justify-examples-schemabuilder</module>
         <module>justify-examples-schemaresolver</module>
         <module>justify-examples-customformat</module>

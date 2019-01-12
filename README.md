@@ -56,7 +56,7 @@ which can be used as the value of "format" keyword in the schema definition.
 
 ## License
 
-All coe samples in this repository are free and unencumbered software released into the public domain. Please read [LICENSE] file for more information.
+All code samples in this repository are free and unencumbered software released into the public domain. Please read [LICENSE] file for more information.
 
 [JSON Schema Specification]: https://json-schema.org/
 [Justify]: https://github.com/leadpony/justify

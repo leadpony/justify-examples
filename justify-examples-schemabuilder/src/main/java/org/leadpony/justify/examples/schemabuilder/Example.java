@@ -1,6 +1,5 @@
 package org.leadpony.justify.examples.schemabuilder;
 
-import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -25,9 +24,8 @@ public class Example {
      * Runs this example.
      *
      * @param instancePath the path to the JSON file to be validated.
-     * @throws IOException if an I/O error occurs while reading JSON files.
      */
-    public void run(String instancePath) throws IOException {
+    public void run(String instancePath) {
         JsonSchema schema = buildSchema();
 
         // Problem handler
@@ -71,7 +69,7 @@ public class Example {
         return schema;
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         if (args.length >= 1) {
             new Example().run(args[0]);
         } else {

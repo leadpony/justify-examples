@@ -1,6 +1,5 @@
 package org.leadpony.justify.examples.schemaresolver;
 
-import java.io.IOException;
 import java.net.URI;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -27,9 +26,8 @@ public class Example {
      *
      * @param schemaPath the path to the JSON schema file.
      * @param instancePath the path to the JSON file to be validated.
-     * @throws IOException if an I/O error occurs while reading JSON files.
      */
-    public void run(String schemaPath, String instancePath) throws IOException {
+    public void run(String schemaPath, String instancePath) {
 
         JsonSchema schema = readSchema(Paths.get(schemaPath));
 
@@ -69,7 +67,7 @@ public class Example {
         }
     };
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         if (args.length >= 2) {
             new Example().run(args[0], args[1]);
         } else {

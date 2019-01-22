@@ -1,6 +1,5 @@
 package org.leadpony.justify.examples.customformat;
 
-import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -17,21 +16,21 @@ import org.leadpony.justify.api.ProblemHandler;
  */
 public class Example {
 
+    // The only instance of JSON validation service.
+    private static final JsonValidationService service = JsonValidationService.newInstance();
+
     /**
      * Run this example.
-     * 
+     *
      * @param schemaPath the path to the JSON schema file.
      * @param instancePath the path to the JSON file to be validated.
-     * @throws IOException if an I/O error occurs while reading JSON files. 
      */
-    public void run(String schemaPath, String instancePath) throws IOException {
-        JsonValidationService service = JsonValidationService.newInstance();
-      
+    public void run(String schemaPath, String instancePath) {
         JsonSchema schema = service.readSchema(Paths.get(schemaPath));
 
         // Problem handler
         ProblemHandler handler = service.createProblemPrinter(System.out::println);
-        
+
         Path pathToInstance = Paths.get(instancePath);
         try (JsonReader reader = service.createReader(pathToInstance, schema, handler)) {
             JsonValue value = reader.readValue();
@@ -39,7 +38,7 @@ public class Example {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         if (args.length >= 2) {
             new Example().run(args[0], args[1]);
         } else {

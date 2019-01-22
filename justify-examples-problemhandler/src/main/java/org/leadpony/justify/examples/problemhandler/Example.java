@@ -1,6 +1,5 @@
 package org.leadpony.justify.examples.problemhandler;
 
-import java.io.IOException;
 import java.nio.file.Paths;
 
 import javax.json.JsonReader;
@@ -17,7 +16,7 @@ import org.leadpony.justify.api.JsonValidationService;
  */
 public class Example {
 
-    // The single instance of validation service.
+    // The only instance of validation service.
     private static final JsonValidationService service = JsonValidationService.newInstance();
 
     /**
@@ -51,7 +50,7 @@ public class Example {
         System.out.println(value.toString());
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         if (args.length >= 2) {
             new Example().run(args[0], args[1]);
         } else {

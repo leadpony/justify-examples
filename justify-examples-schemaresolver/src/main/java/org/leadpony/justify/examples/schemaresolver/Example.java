@@ -9,6 +9,7 @@ import javax.json.JsonValue;
 
 import org.leadpony.justify.api.JsonSchema;
 import org.leadpony.justify.api.JsonSchemaReader;
+import org.leadpony.justify.api.JsonSchemaReaderFactory;
 import org.leadpony.justify.api.JsonSchemaResolver;
 import org.leadpony.justify.api.JsonValidationService;
 import org.leadpony.justify.api.ProblemHandler;
@@ -24,7 +25,7 @@ public class Example {
     /**
      * Runs this example.
      *
-     * @param schemaPath the path to the JSON schema file.
+     * @param schemaPath   the path to the JSON schema file.
      * @param instancePath the path to the JSON file to be validated.
      */
     public void run(String schemaPath, String instancePath) {
@@ -48,12 +49,12 @@ public class Example {
      * @return
      */
     private JsonSchema readSchema(Path path) {
-        try (JsonSchemaReader reader = service.createSchemaReader(path)) {
-            reader.withSchemaResolver(new LocalJsonSchemaResolver());
+        JsonSchemaReaderFactory factory = service.createSchemaReaderFactoryBuilder()
+                .withSchemaResolver(new LocalJsonSchemaResolver()).build();
+        try (JsonSchemaReader reader = factory.createSchemaReader(path)) {
             return reader.read();
         }
     }
-
 
     /**
      * Schema resolver which will provide schemas from the current directory.

@@ -8,12 +8,12 @@
     <parent>
         <groupId>org.leadpony.justify</groupId>
         <artifactId>justify-examples</artifactId>
-        <version>0.11.0-SNAPSHOT</version>
+        <version>0.12.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>justify-examples-basicreader</artifactId>
     <packaging>jar</packaging>
-   
+
     <build>
         <plugins>
             <plugin>
@@ -22,5 +22,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>

@@ -7,8 +7,8 @@ This project provides various kinds of code samples demonstrating how to validat
 
 The following tools are required to build and run the examples.
 
-* JDK 8, 9, 10 or 11.
-* [Apache Maven]
+* JDK 8, 9, 10, 11, or 12.
+* [Apache Maven] 3.6.0
 
 The commands below build all examples in this repository.
 

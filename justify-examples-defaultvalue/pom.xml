@@ -11,7 +11,7 @@
         <version>0.15.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>justify-examples-basicparser</artifactId>
+    <artifactId>justify-examples-defaultvalue</artifactId>
     <packaging>jar</packaging>
 
     <build>

@@ -27,4 +27,4 @@ $ ./run-java8.sh person.json
 
 Please see [LICENSE](../LICENSE) in the repository root.
 
-[Java API for JSON Processing]: https://javaee.github.io/jsonp/
+[Java API for JSON Processing]: https://eclipse-ee4j.github.io/jsonp/

@@ -64,7 +64,7 @@ All code samples in this repository are free and unencumbered software released 
 
 [JSON Schema Specification]: https://json-schema.org/
 [Justify]: https://github.com/leadpony/justify
-[Java API for JSON Processing]: https://javaee.github.io/jsonp/
+[Java API for JSON Processing]: https://eclipse-ee4j.github.io/jsonp/
 [Java API for JSON Binding]: http://json-b.net/
 [LICENSE]: LICENSE
 [Apache Maven]: https://maven.apache.org/

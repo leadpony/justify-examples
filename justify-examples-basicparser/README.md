@@ -26,4 +26,4 @@ $ ./run-java8.sh <path/to/JSON schema> <path/to/JSON instance>
 
 Please see [LICENSE](../LICENSE) in the repository root.
 
-[Java API for JSON Processing]: https://javaee.github.io/jsonp/
+[Java API for JSON Processing]: https://eclipse-ee4j.github.io/jsonp/

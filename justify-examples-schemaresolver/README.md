@@ -27,5 +27,5 @@ $ ./run-java8.sh ballpark.schema.json ballpark.json
 
 Please see [LICENSE](../LICENSE) in the repository root.
 
-[Java API for JSON Processing]: https://javaee.github.io/jsonp/
-[JsonSchemaResolver]: https://static.javadoc.io/org.leadpony.justify/justify/0.9.1/org.leadpony.justify/org/leadpony/justify/api/JsonSchemaResolver.html
+[Java API for JSON Processing]: https://eclipse-ee4j.github.io/jsonp/
+[JsonSchemaResolver]: https://static.javadoc.io/org.leadpony.justify/justify/0.15.0/org.leadpony.justify/org/leadpony/justify/api/JsonSchemaResolver.html

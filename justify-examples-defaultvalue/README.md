@@ -4,13 +4,16 @@
 
 This code sample shows how to fill the missing properties and/or items in the instance with default values given by `default` keyword in the schema.
 
-By default the feature is disabled and the instance never be modified. The method `withDefaultValues()` in the interface `JsonValidatorFactoryBuilder` can be used to enable the feature.
+By default the feature is disabled and the instance never be modified. The method `withDefaultValues()` in the interface `ValidationConfig` can be used to enable the feature.
 
 ```java
-JsonReaderFactory readerFactory = service.createValidatorFactoryBuilder(schema)
-        .withProblemHandler(handler)
-        .withDefaultValues(true)
-        .buildReaderFactory();
+ValidationConfig config = service.createValidationConfig();
+config.withSchema(schema)
+      .withProblemHandler(handler)
+      .withDefaultValues(true);
+
+// Creates a configured reader factory.
+JsonReaderFactory readerFactory = service.createReaderFactory(config.getAsMap());
 ```
 
 The input JSON instance shown below

@@ -13,6 +13,7 @@ import org.leadpony.justify.api.JsonSchema;
 import org.leadpony.justify.api.JsonValidatingException;
 import org.leadpony.justify.api.JsonValidationService;
 import org.leadpony.justify.api.ProblemHandler;
+import org.leadpony.justify.api.ValidationConfig;
 
 /**
  * This example demonstrates the validator fills a JSON document with default
@@ -37,12 +38,15 @@ public class Example {
         // Problem handler just priting problems.
         ProblemHandler handler = service.createProblemPrinter(System.out::println);
 
-        // Creates a configured reader factory.
+        // Creates a configuration.
         // Filling with default values is enabled.
-        JsonReaderFactory readerFactory = service.createValidatorFactoryBuilder(schema)
-                .withProblemHandler(handler)
-                .withDefaultValues(true)
-                .buildReaderFactory();
+        ValidationConfig config = service.createValidationConfig();
+        config.withSchema(schema)
+              .withProblemHandler(handler)
+              .withDefaultValues(true);
+
+        // Creates a configured reader factory.
+        JsonReaderFactory readerFactory = service.createReaderFactory(config.getAsMap());
 
         // Path to the instance file.
         Path pathToInstance = Paths.get(instancePath);

@@ -22,6 +22,9 @@ public class Example {
     // The only instance of JSON validation service.
     private final JsonValidationService service = JsonValidationService.newInstance();
 
+    // The configured factory which will produce schema readers.
+    private JsonSchemaReaderFactory readerFactory;
+
     /**
      * Runs this example.
      *
@@ -29,6 +32,11 @@ public class Example {
      * @param instancePath the path to the JSON file to be validated.
      */
     public void run(String schemaPath, String instancePath) {
+
+        // Builds a factory of schema readers.
+        this.readerFactory = service.createSchemaReaderFactoryBuilder()
+                .withSchemaResolver(this::resolveSchema)
+                .build();
 
         JsonSchema schema = readSchema(Paths.get(schemaPath));
 
@@ -45,28 +53,26 @@ public class Example {
     /**
      * Reads the JSON schema from the specified path.
      *
-     * @param path
-     * @return
+     * @param path the path to the schema.
+     * @return the read schema.
      */
     private JsonSchema readSchema(Path path) {
-        JsonSchemaReaderFactory factory = service.createSchemaReaderFactoryBuilder()
-                .withSchemaResolver(new LocalJsonSchemaResolver()).build();
-        try (JsonSchemaReader reader = factory.createSchemaReader(path)) {
+        try (JsonSchemaReader reader = readerFactory.createSchemaReader(path)) {
             return reader.read();
         }
     }
 
     /**
-     * Schema resolver which will provide schemas from the current directory.
+     * Resolves the referenced JSON schema.
+     *
+     * @param id the identifier of the referenced JSON schema.
+     * @return referenced JSON schema.
      */
-    private class LocalJsonSchemaResolver implements JsonSchemaResolver {
-
-        @Override
-        public JsonSchema resolveSchema(URI id) {
-            Path path = Paths.get(".", id.getPath());
-            return service.readSchema(path);
-        }
-    };
+    private JsonSchema resolveSchema(URI id) {
+        // The schema is available in the local filesystem.
+        Path path = Paths.get(".", id.getPath());
+        return readSchema(path);
+    }
 
     public static void main(String[] args) {
         if (args.length >= 2) {

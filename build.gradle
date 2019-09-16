@@ -26,7 +26,12 @@ subprojects {
         into "${buildDir}/libs"
     }
 
-    build.dependsOn copyDependencies
+    task copyScripts(type: Copy) {
+        from 'src/main/scripts', 'src/main/json'
+        into "${buildDir}"
+    }
+
+    build.dependsOn copyDependencies, copyScripts
 
     dependencies {
         implementation 'org.leadpony.justify:justify:1.1.0'

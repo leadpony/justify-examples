@@ -1,0 +1,4 @@
+dependencies {
+    implementation 'jakarta.json.bind:jakarta.json.bind-api:1.0.1'
+    runtimeOnly 'org.eclipse:yasson:1.0.4'
+}

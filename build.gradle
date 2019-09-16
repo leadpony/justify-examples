@@ -1,0 +1,39 @@
+allprojects {
+    group = 'org.leadpony.justify'
+    version = '1.1.0-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    compileJava {
+        doFirst {
+            options.encoding = 'UTF-8'
+
+            if (JavaVersion.current().isJava9Compatible()) {
+                options.compilerArgs = [
+                    '--module-path', classpath.asPath
+                ]
+                classpath = files()
+            } else {
+                exclude 'module-info.java'
+            }
+        }
+    }
+
+    task copyDependencies(type: Copy) {
+        from configurations.default
+        into "${buildDir}/libs"
+    }
+
+    build.dependsOn copyDependencies
+
+    dependencies {
+        implementation 'org.leadpony.justify:justify:1.1.0'
+        runtimeOnly 'org.glassfish:jakarta.json:1.1.5:module'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}

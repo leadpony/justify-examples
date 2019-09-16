@@ -1,0 +1,8 @@
+include 'justify-examples-basicparser'
+include 'justify-examples-basicreader'
+include 'justify-examples-binding'
+include 'justify-examples-customformat'
+include 'justify-examples-defaultvalue'
+include 'justify-examples-problemhandler'
+include 'justify-examples-schemabuilder'
+include 'justify-examples-schemaresolver'

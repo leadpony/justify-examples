@@ -5,56 +5,76 @@ This project provides various kinds of code samples demonstrating how to validat
 
 ## How to Build Examples
 
-The following tools are required to build and run the examples.
+### Prerequisites
+
+The following tools are required to build and run the examples in this repository.
 
 * JDK 8, 9, 10, 11, or 12.
-* [Apache Maven] 3.6.0
+* One of the following build tools
+  * [Apache Maven] 3.6.0 or higher
+  * [Gradle] 5.6.2 or higher
 
-The commands below build all examples in this repository.
+### Downloading Examples
+
+The commands below download all of the examples.
 
 ```bash
 $ git clone https://github.com/leadpony/justify-examples.git
-$ cd justify-examples
+```
+
+Alternatively you can download a ZIP file containing all source code from [Download].
+
+### Building Examples
+
+The commands below build all of the examples.
+
+*Maven*
+```bash
+$ cd path/to/justify-examples
 $ mvn package
 ```
 
-The ZIP file containing all source code is also available from [Download].
+*Gradle*
+```bash
+$ cd path/to/justify-examples
+$ gradle build
+```
 
 ## Examples
 
-### 1. [Basic Parser](justify-examples-basicparser/)
+### 1. [Basic Parser](justify-examples-basicparser/README.md)
 
 This code sample shows how to validate a JSON document using the Streaming API of [Java API for JSON Processing].
 
-### 2. [Basic Reader](justify-examples-basicreader/)
+### 2. [Basic Reader](justify-examples-basicreader/README.md)
 
 This code sample shows how to validate a JSON document using the Object Model API of [Java API for JSON Processing].
 
-### 3. [Binding](justify-examples-binding/)
+### 3. [Binding](justify-examples-binding/README.md)
 
 This code sample shows how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
 
-### 4. [Problem Handler](justify-examples-problemhandler/)
+### 4. [Problem Handler](justify-examples-problemhandler/README.md)
 
 This code sample shows how to implement your own problem handler,
 which processes the problems found in the validation.
 
-### 5. [Schema Builder](justify-examples-schemabuilder/)
+### 5. [Schema Builder](justify-examples-schemabuilder/README.md)
 
 This code sample shows how to build a JSON schema programmatically.
 The code validates a JSON document against the built schema.
 
-### 6. [Schema Resolver](justify-examples-schemaresolver/)
+### 6. [Schema Resolver](justify-examples-schemaresolver/README.md)
 
 This code sample shows how to resolve a referenced external JSON schema using
 the implementation class of JsonSchemaResolver.
 
-### 7. [Custom Format](justify-examples-customformat/)
+### 7. [Custom Format](justify-examples-customformat/README.md)
 
 This code sample shows how to implement your own format attribute,
 which can be used as the value of "format" keyword in the schema definition.
 
-### 8. [Default Value](justify-examples-defaultvalue/)
+### 8. [Default Value](justify-examples-defaultvalue/README.md)
 
 This code sample shows how to fill the missing properties and/or items in the instance with default values given by `default` keyword in the schema.
 
@@ -68,4 +88,5 @@ All code samples in this repository are free and unencumbered software released 
 [Java API for JSON Binding]: http://json-b.net/
 [LICENSE]: LICENSE
 [Apache Maven]: https://maven.apache.org/
+[Gradle]: https://gradle.org/
 [Download]: https://github.com/leadpony/justify-examples/archive/master.zip

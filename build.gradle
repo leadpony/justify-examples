@@ -1,6 +1,6 @@
 allprojects {
     group = 'org.leadpony.justify'
-    version = '2.0.0-SNAPSHOT'
+    version = '2.1.0-SNAPSHOT'
 }
 
 subprojects {
@@ -34,7 +34,7 @@ subprojects {
     build.dependsOn copyDependencies, copyScripts
 
     dependencies {
-        implementation 'org.leadpony.justify:justify:2.0.0'
+        implementation 'org.leadpony.justify:justify:2.1.0'
         runtimeOnly 'org.glassfish:jakarta.json:1.1.6:module'
     }
 

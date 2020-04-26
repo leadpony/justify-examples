@@ -16,25 +16,21 @@ The following tools are required to build and run the examples in this repositor
 
 ### Downloading Examples
 
-The commands below download all of the examples.
+#### Justify version 2.x
 
-```bash
-$ git clone https://github.com/leadpony/justify-examples.git
-```
-
-Alternatively you can download a ZIP file containing all source code from [Download].
+All of the examples for Justify version 2.x can be downloaded from [Release Page](https://github.com/leadpony/justify-examples/releases/tag/v2.1.0).
 
 ### Building Examples
 
 The commands below build all of the examples.
 
-*Maven*
+#### Build with Maven
 ```bash
 $ cd path/to/justify-examples
 $ mvn package
 ```
 
-*Gradle*
+#### Build with Gradle
 ```bash
 $ cd path/to/justify-examples
 $ gradle build
@@ -44,15 +40,15 @@ $ gradle build
 
 ### 1. [Basic Parser](justify-examples-basicparser/README.md)
 
-This code sample shows how to validate a JSON document using the Streaming API of [Java API for JSON Processing].
+This code sample shows how to validate a JSON document using the Streaming API of [Jakarta JSON Processing API] (JSON-P).
 
 ### 2. [Basic Reader](justify-examples-basicreader/README.md)
 
-This code sample shows how to validate a JSON document using the Object Model API of [Java API for JSON Processing].
+This code sample shows how to validate a JSON document using the Object Model API of [Jakarta JSON Processing API] (JSON-P).
 
 ### 3. [Binding](justify-examples-binding/README.md)
 
-This code sample shows how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Java API for JSON Binding].
+This code sample shows how to validate a JSON document while unmarshalling the JSON document into a Plain Old Java Object, using [Jakarta JSON Binding API] (JSON-B).
 
 ### 4. [Problem Handler](justify-examples-problemhandler/README.md)
 
@@ -84,9 +80,8 @@ All code samples in this repository are free and unencumbered software released 
 
 [JSON Schema Specification]: https://json-schema.org/
 [Justify]: https://github.com/leadpony/justify
-[Java API for JSON Processing]: https://eclipse-ee4j.github.io/jsonp/
-[Java API for JSON Binding]: http://json-b.net/
+[Jakarta JSON Processing API]: https://eclipse-ee4j.github.io/jsonp/
+[Jakarta JSON Binding API]: http://json-b.net/
 [LICENSE]: LICENSE
 [Apache Maven]: https://maven.apache.org/
 [Gradle]: https://gradle.org/
-[Download]: https://github.com/leadpony/justify-examples/archive/master.zip

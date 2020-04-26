@@ -1,7 +1,7 @@
 package org.leadpony.justify.examples.customformat;
 
-import javax.json.JsonString;
-import javax.json.JsonValue;
+import jakarta.json.JsonString;
+import jakarta.json.JsonValue;
 
 import org.leadpony.justify.api.InstanceType;
 import org.leadpony.justify.spi.FormatAttribute;

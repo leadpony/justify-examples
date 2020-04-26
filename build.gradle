@@ -34,8 +34,8 @@ subprojects {
     build.dependsOn copyDependencies, copyScripts
 
     dependencies {
-        implementation 'org.leadpony.justify:justify:2.1.0'
-        runtimeOnly 'org.glassfish:jakarta.json:1.1.6:module'
+        implementation 'org.leadpony.justify:justify:3.0.0-SNAPSHOT'
+        runtimeOnly 'org.glassfish:jakarta.json:2.0.0-RC2:module'
     }
 
     repositories {

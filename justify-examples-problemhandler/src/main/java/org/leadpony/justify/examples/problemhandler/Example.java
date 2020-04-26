@@ -2,8 +2,8 @@ package org.leadpony.justify.examples.problemhandler;
 
 import java.nio.file.Paths;
 
-import javax.json.JsonReader;
-import javax.json.JsonValue;
+import jakarta.json.JsonReader;
+import jakarta.json.JsonValue;
 
 import org.leadpony.justify.api.JsonSchema;
 import org.leadpony.justify.api.JsonValidationService;

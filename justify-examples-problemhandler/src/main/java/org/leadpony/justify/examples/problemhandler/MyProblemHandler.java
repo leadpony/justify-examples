@@ -3,7 +3,7 @@ package org.leadpony.justify.examples.problemhandler;
 import java.io.PrintStream;
 import java.util.List;
 
-import javax.json.stream.JsonLocation;
+import jakarta.json.stream.JsonLocation;
 
 import org.leadpony.justify.api.Problem;
 import org.leadpony.justify.api.ProblemHandler;

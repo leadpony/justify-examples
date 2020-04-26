@@ -3,8 +3,8 @@ package org.leadpony.justify.examples.schemabuilder;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import javax.json.JsonReader;
-import javax.json.JsonValue;
+import jakarta.json.JsonReader;
+import jakarta.json.JsonValue;
 
 import org.leadpony.justify.api.InstanceType;
 import org.leadpony.justify.api.JsonSchema;

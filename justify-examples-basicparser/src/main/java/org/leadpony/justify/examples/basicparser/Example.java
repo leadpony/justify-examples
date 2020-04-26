@@ -3,7 +3,7 @@ package org.leadpony.justify.examples.basicparser;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import javax.json.stream.JsonParser;
+import jakarta.json.stream.JsonParser;
 
 import org.leadpony.justify.api.JsonSchema;
 import org.leadpony.justify.api.JsonValidationService;

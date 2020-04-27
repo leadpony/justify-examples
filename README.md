@@ -11,16 +11,16 @@ The following tools are required to build and run the examples in this repositor
 
 * JDK 9 or higher
 * One of the following build tools
-  * [Apache Maven] 3.6.0 or higher
-  * [Gradle] 5.6.2 or higher
+  * [Apache Maven] 3.6.2 or higher
+  * [Gradle] 6.3 or higher
 
 ### Downloading Examples
 
 All of the examples can be downloaded from [Releases Page](https://github.com/leadpony/justify-examples/releases/).
 
-#### _For Justify 2.x users_
+#### _For Justify version 2 users_
 
-Previously released examples for Justify version 2.x can be downloaded from [here](https://github.com/leadpony/justify-examples/releases/tag/v2.1.0).
+Previously released examples for Justify version 2 can be downloaded from [Release v2.1.0](https://github.com/leadpony/justify-examples/releases/tag/v2.1.0).
 
 ### Building Examples
 

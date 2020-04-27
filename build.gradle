@@ -4,25 +4,21 @@ allprojects {
 }
 
 subprojects {
+
     apply plugin: 'java'
 
     compileJava {
         doFirst {
             options.encoding = 'UTF-8'
-
-            if (JavaVersion.current().isJava9Compatible()) {
-                options.compilerArgs = [
-                    '--module-path', classpath.asPath
-                ]
-                classpath = files()
-            } else {
-                exclude 'module-info.java'
-            }
+            options.compilerArgs = [
+                '--module-path', classpath.asPath
+            ]
+            classpath = files()
         }
     }
 
     task copyDependencies(type: Copy) {
-        from configurations.default
+        from configurations.runtimeClasspath
         into "${buildDir}/libs"
     }
 
@@ -34,8 +30,12 @@ subprojects {
     build.dependsOn copyDependencies, copyScripts
 
     dependencies {
-        implementation 'org.leadpony.justify:justify:3.0.0-SNAPSHOT'
-        runtimeOnly 'org.glassfish:jakarta.json:2.0.0-RC2:module'
+        constraints {
+            implementation 'org.leadpony.justify:justify:3.0.0-RC1'
+            implementation 'jakarta.json.bind:jakarta.json.bind-api:2.0.0-RC1'
+            runtimeOnly 'org.glassfish:jakarta.json:2.0.0-RC2'
+            runtimeOnly 'org.eclipse:yasson:2.0.0-M1'
+        }
     }
 
     repositories {

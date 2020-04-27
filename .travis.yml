@@ -2,6 +2,6 @@ language: java
 jdk:
     - openjdk9
 env:
-    - BUILD=mvn package
-    - BUILD=gradle build
+    - BUILD="mvn package"
+    - BUILD="gradle build"
 script: $BUILD

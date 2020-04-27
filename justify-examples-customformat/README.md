@@ -28,21 +28,9 @@ Follow the instructions shown in [README](../README.md) in the repository root.
 
 Navigate to the generated `target` or `build` directory.
 
-Using module path in Java 9 or higher:
-
-```bash
+```shell
 $ ./run.sh words.schema.json words.json
 ```
-
-Using classpath in Java 8:
-
-```bash
-$ ./run-java8.sh words.schema.json words.json
-```
-
-## License
-
-Please see [LICENSE](../LICENSE) in the repository root.
 
 [Java API for JSON Processing]: https://eclipse-ee4j.github.io/jsonp/
 [Service Provider Interface]: https://docs.oracle.com/javase/9/docs/api/java/util/ServiceLoader.html

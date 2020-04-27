@@ -9,16 +9,18 @@ This project provides various kinds of code samples demonstrating how to validat
 
 The following tools are required to build and run the examples in this repository.
 
-* JDK 8, 9, 10, 11, or 12.
+* JDK 9 or higher
 * One of the following build tools
   * [Apache Maven] 3.6.0 or higher
   * [Gradle] 5.6.2 or higher
 
 ### Downloading Examples
 
-#### Justify version 2.x
+All of the examples can be downloaded from [Releases Page](https://github.com/leadpony/justify-examples/releases/).
 
-All of the examples for Justify version 2.x can be downloaded from [Release Page](https://github.com/leadpony/justify-examples/releases/tag/v2.1.0).
+#### _For Justify 2.x users_
+
+Previously released examples for Justify version 2.x can be downloaded from [here](https://github.com/leadpony/justify-examples/releases/tag/v2.1.0).
 
 ### Building Examples
 

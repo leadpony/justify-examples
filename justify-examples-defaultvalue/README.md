@@ -49,18 +49,6 @@ Follow the instructions shown in [README](../README.md) in the repository root.
 
 Navigate to the generated `target` or `build` directory.
 
-Using module path in Java 9 or higher:
-
-```bash
+```shell
 $ ./run.sh point.schema.json point.json
 ```
-
-Using classpath in Java 8:
-
-```bash
-$ ./run-java8.sh point.schema.json point.json
-```
-
-## License
-
-Please see [LICENSE](../LICENSE) in the repository root.

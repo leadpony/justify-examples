@@ -13,20 +13,6 @@ Follow the instructions shown in [README](../README.md) in the repository root.
 
 Navigate to the generated `target` or `build` directory.
 
-Using module path in Java 9 or higher:
-
-```bash
+```shell
 $ ./run.sh person.schema.json person-invalid.json
 ```
-
-Using classpath in Java 8:
-
-```bash
-$ ./run-java8.sh person.schema.json person-invalid.json
-```
-
-## License
-
-Please see [LICENSE](../LICENSE) in the repository root.
-
-[Java API for JSON Processing]: https://eclipse-ee4j.github.io/jsonp/

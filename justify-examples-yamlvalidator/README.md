@@ -2,9 +2,9 @@
 
 ## Description
 
-This code sample demonstrates how to validate a YAML document using JsonParser and JsonReader provided by [Jakarta JSON Processing API].
+This code sample demonstrates how to validate a YAML document using JsonParser and JsonReader defined by [Jakarta JSON Processing API].
 
-All you need to do for validating YAML documents is just replacing any JSON-P implementation with [joy-yaml], which is another JSON-P implementation, as follows:
+All you need to do for validating YAML documents is just replacing any JSON-P implementation with `joy-yaml` provided by [Joy] project, which is another JSON-P implementation, as follows:
 
 ```xml
 <dependency>
@@ -14,6 +14,8 @@ All you need to do for validating YAML documents is just replacing any JSON-P im
     <scope>runtime</scope>
 </dependency>
 ```
+
+Please refer to the [Joy] project page for its limitations as a YAML processor.
 
 ## How to Build
 
@@ -28,4 +30,4 @@ $ ./run.sh <path/to/JSON schema> <path/to/YAML document>
 ```
 
 [Jakarta JSON Processing API]: https://eclipse-ee4j.github.io/jsonp/
-[joy-yaml]: https://github.com/leadpony/joy
+[Joy]: https://github.com/leadpony/joy

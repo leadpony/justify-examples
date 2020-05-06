@@ -76,6 +76,10 @@ which can be used as the value of "format" keyword in the schema definition.
 
 This code sample shows how to fill the missing properties and/or items in the instance with default values given by `default` keyword in the schema.
 
+### 9. [YAML Validator](justify-examples-yamlvalidator/README.md)
+
+This code sample demonstrates how to validate a YAML document using JsonParser and JsonReader of [Jakarta JSON Processing API].
+
 ## License
 
 All code samples in this repository are free and unencumbered software released into the public domain. Please read [LICENSE] file for more information.

@@ -1,0 +1,4 @@
+dependencies {
+    implementation 'org.leadpony.justify:justify'
+    runtimeOnly 'org.leadpony.joy:joy-yaml'
+}

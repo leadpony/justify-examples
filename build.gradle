@@ -23,7 +23,7 @@ subprojects {
     }
 
     task copyScripts(type: Copy) {
-        from 'src/main/scripts', 'src/main/json'
+        from 'src/main/scripts', 'src/main/json', 'src/main/yaml'
         into "${buildDir}"
     }
 
@@ -35,6 +35,7 @@ subprojects {
             implementation 'jakarta.json.bind:jakarta.json.bind-api:2.0.0-RC1'
             runtimeOnly 'org.glassfish:jakarta.json:2.0.0-RC2'
             runtimeOnly 'org.eclipse:yasson:2.0.0-M1'
+            runtimeOnly 'org.leadpony.joy:joy-yaml:2.0.0-RC2'
         }
     }
 

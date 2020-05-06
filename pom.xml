@@ -19,6 +19,7 @@
         <module>justify-examples-problemhandler</module>
         <module>justify-examples-schemabuilder</module>
         <module>justify-examples-schemaresolver</module>
+        <module>justify-examples-yamlvalidator</module>
     </modules>
 
     <properties>
@@ -49,6 +50,11 @@
                 <artifactId>justify</artifactId>
                 <version>3.0.0-RC1</version>
             </dependency>
+            <dependency>
+                <groupId>org.leadpony.joy</groupId>
+                <artifactId>joy-yaml</artifactId>
+                <version>2.0.0-RC2</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -63,6 +69,10 @@
             </resource>
             <resource>
                 <directory>src/main/json</directory>
+                <targetPath>${project.build.directory}</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/yaml</directory>
                 <targetPath>${project.build.directory}</targetPath>
             </resource>
         </resources>

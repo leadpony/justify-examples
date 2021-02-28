@@ -20,6 +20,7 @@
         <module>justify-examples-schemabuilder</module>
         <module>justify-examples-schemaresolver</module>
         <module>justify-examples-yamlvalidator</module>
+        <module>justify-examples-yasson</module>
     </modules>
 
     <properties>

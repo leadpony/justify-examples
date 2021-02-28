@@ -1,0 +1,43 @@
+{
+    "$id": "https://example.com/point.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Point",
+    "type": "object",
+    "properties": {
+        "color": {
+            "type": "object",
+            "required": ["r", "g", "b"],
+            "properties": {
+                "r": {
+                    "type": "integer"
+                },
+                "g": {
+                    "type": "integer"
+                },
+                "b": {
+                    "type": "integer"
+                },
+                "a": {
+                    "type": "integer",
+                    "default": 255
+                }
+            }
+        },
+        "point": {
+            "type": "array",
+            "minItems": 2,
+            "items": [
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "number",
+                    "default": 0
+                }
+            ]
+        }
+    }
+}

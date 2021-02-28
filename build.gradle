@@ -1,6 +1,6 @@
 allprojects {
     group = 'org.leadpony.justify'
-    version = '3.0.0'
+    version = '3.1.0-SNAPSHOT'
 }
 
 subprojects {
@@ -31,11 +31,11 @@ subprojects {
 
     dependencies {
         constraints {
-            implementation 'org.leadpony.justify:justify:3.0.0'
-            implementation 'jakarta.json.bind:jakarta.json.bind-api:2.0.0-RC2'
+            implementation 'org.leadpony.justify:justify:3.1.0'
+            implementation 'jakarta.json.bind:jakarta.json.bind-api:2.0.0'
             runtimeOnly 'org.glassfish:jakarta.json:2.0.0'
             runtimeOnly 'org.eclipse:yasson:2.0.0-M2'
-            runtimeOnly 'org.leadpony.joy:joy-yaml:2.0.0'
+            runtimeOnly 'org.leadpony.joy:joy-yaml:2.1.0'
         }
     }
 

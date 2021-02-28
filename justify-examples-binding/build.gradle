@@ -2,5 +2,7 @@ dependencies {
     implementation 'org.leadpony.justify:justify'
     implementation 'jakarta.json.bind:jakarta.json.bind-api'
     runtimeOnly 'org.glassfish:jakarta.json::module'
-    runtimeOnly 'org.eclipse:yasson'
+    runtimeOnly ('org.eclipse:yasson') {
+        exclude group: 'org.glassfish', module: 'jakarta.json'
+    }
 }

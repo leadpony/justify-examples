@@ -12,7 +12,7 @@ The following tools are required to build and run the examples in this repositor
 * JDK 9 or higher
 * One of the following build tools
   * [Apache Maven] 3.6.2 or higher
-  * [Gradle] 6.3 or higher
+  * [Gradle] 6.8.3 or higher
 
 ### Downloading Examples
 
